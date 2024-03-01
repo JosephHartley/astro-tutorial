@@ -20,16 +20,15 @@ const fontWeight = "bold";
 const textCase = "uppercase";
 ---
 
+<style define:vars={{skillColor, fontWeight, textCase}}>
+  .skill {
+    color: var(--skillColor);
+    font-weight: var(--fontWeight);
+    text-transform: var(--textCase);
+  }
+</style>
+
 <BaseLayout pageTitle={pageTitle}>
-  <head>
-    <style define:vars={{skillColor, fontWeight, textCase}}>
-      .skill {
-        color: var(--skillColor);
-        font-weight: var(--fontWeight);
-        text-transform: var(--textCase);
-      }
-    </style>
-	</head>
   <h2>... and my new Astro site!</h2>
 
   <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
